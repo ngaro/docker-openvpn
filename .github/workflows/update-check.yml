@@ -23,11 +23,11 @@ jobs:
         platforms: linux/amd64
         push: false
         load: true
-        tags: seb-openvpn:local
+        tags: garo-openvpn:local
       
     - name: check
       run: |
         docker images
         echo "checking checksum"
-        docker inspect --format='{{.RepoDigests}}' seb-openvpn:local
+        docker inspect --format='{{.RepoDigests}}' garo-openvpn:local
         docker images --digests
