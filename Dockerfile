@@ -3,7 +3,7 @@
 # Smallest base image
 FROM alpine:3.16.1
 
-LABEL maintainer="Kyle Manna <kyle@kylemanna.com>"
+LABEL maintainer="Nikolas Garofil <nikolas@garofil.be>"
 
 # Testing: pamtester
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
